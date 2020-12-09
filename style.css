@@ -1,0 +1,56 @@
+.container {
+    --dark_black_blue: rgb(33, 44, 61);
+    --light_grey: rgb(98, 107, 120);
+    --grey_blue: rgb(28, 67, 122);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    "topnav" "topnav" "topnav"
+    "sidebar" "content" "sidebar"
+    "sidebar" "footer" "sidebar";
+}
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.topnav a:hover {
+    background-color: var(--light_grey);
+    color: black;
+}
+
+.topnav a.activate {
+    background-color: var(--dark_black_blue);
+    color: grey;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--grey_blue);
+}
+.content {
+    grid-area: content;
+    background-color: var(--dark_black_blue);
+}
+.footer {
+    grid-area: footer;
+    background-color: var(--dark_black_blue);
+}
