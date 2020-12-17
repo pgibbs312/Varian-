@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    
     <title>Varian</title>
 </head>
 <body>
     <div class= "container">
         <div class= "main">
             <div class= "topnav">
-                <a href= "#home" class= "active"></a>
+                <a href= "#home" class= "active">Home</a>
                 <a href= "#story">Story</a>
                 <a href= "#lore">Lore</a>
                 <a href= "about">About</a>
@@ -19,7 +22,35 @@
 
             </div>
             <div class= "content">
-                <p>place holder</p>
+                <h1>Varian</h1>
+                <!---Slideshow Box--->
+                <div class= "slide-show-box">
+                    <div class= "slide fade">
+                        <div class= "text-num">1/ 3</div>
+                        <img src= "dark_mountain.jpg" style="width:100%">
+                        <div class= "text">The Mountain</div>
+                    </div>
+                    <div class= "slide fade">
+                        <div class= "text-num">2/ 3</div>
+                        <img src= "dark_town.jpg" style= "width:100%">
+                        <div class= "text">Town</div>
+                    </div>
+                    <div class= "slide fade">
+                        <div class= "text-num">3/3</div>
+                        <img src= "souls.jpg" style= "width: 100%">
+                        <div class= "text">Souls</div>
+                    </div>
+                    <!---Next and Previous Buttons--->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!---Dot/Circle--->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
            <footer class= "footer">
                 <h3>Reach me @</h3>
@@ -30,4 +61,5 @@
         </div>
     </div>
 </body>
+<script src= "apps.js"></script>
 </html>
