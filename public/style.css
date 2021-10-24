@@ -79,7 +79,7 @@ h1 {
 /* Slide Show  */
 /* *{box-sizing: border-box;} */
 .slide-show-box {
-    max-width: 1000%;
+    max-width: 100%;
     position: relative;
     margin: auto;
 
